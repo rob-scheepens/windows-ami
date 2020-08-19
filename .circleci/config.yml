@@ -1,10 +1,4 @@
-version: 2.1
-
-workflows:
-  test-env-vars:
-    jobs:
-      - build:
-          context: AWS # has an env var called MY_ENV_VAR
+version: 2
           
 jobs:
   windows_visualstudio_aws:
@@ -99,6 +93,10 @@ jobs:
     - run:
         command: scripts/gc-ec2-instances.sh
 workflows:
+  test-env-vars:
+    jobs:
+      - build:
+          context: AWS # has an env var called MY_ENV_VAR
   build_all_images:
     jobs:
       - windows_visualstudio_aws:
