@@ -1,4 +1,11 @@
-version: 2
+version: 2.1
+
+workflows:
+  test-env-vars:
+    jobs:
+      - build:
+          context: AWS # has an env var called MY_ENV_VAR
+          
 jobs:
   windows_visualstudio_aws:
     docker:
