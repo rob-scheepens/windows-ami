@@ -17,7 +17,7 @@ builders:
       filters:
         virtualization-type: "hvm"
         root-device-type: "ebs"
-        name: "Windows_Server-2019-English-Full-ContainersLatest-*"
+        name: "windows-server-2019-english-full-base-x86/2020.9.9"
       owners: ["153984058986"]
       most_recent: true
     instance_type: "m5.2xlarge"
