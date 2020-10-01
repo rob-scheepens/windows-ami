@@ -10,14 +10,14 @@ variables:
 
 builders:
   - type: amazon-ebs
-    access_key: "AKIAX4O7LZBOLOYTIOPD"
-    secret_key: "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"
-    region: '{{ user "us-west-2" }}'
+    access_key: ""
+    secret_key: ""
+    region: '{{ "us-west-2" }}'
     source_ami_filter:
       filters:
         virtualization-type: "hvm"
         root-device-type: "ebs"
-        name: "Windows_Server-2019-English-Full-ContainersLatest-*"
+        name: "Windows_Server-2019*"
       owners: ["153984058986"]
       most_recent: true
     instance_type: "m5.2xlarge"
