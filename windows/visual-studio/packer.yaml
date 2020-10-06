@@ -12,12 +12,12 @@ builders:
   - type: amazon-ebs
     access_key: ""
     secret_key: ""
-    region: '{{ "us-west-2" }}'
+    region: '{ "us-west-2" }'
     source_ami_filter:
       filters:
         virtualization-type: "hvm"
         root-device-type: "ebs"
-        name: "Windows2019Server3-18-007af8b6-e929-4864-9b08-f52dad0c85f4-ami-0714bc07b39d3bbfa.4"
+        name: "Windows_Server-2019-English-Full-ContainersLatest-*"
       owners: ["153984058986"]
       most_recent: true
     instance_type: "m5.2xlarge"
