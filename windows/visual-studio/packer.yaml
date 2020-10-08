@@ -1,6 +1,5 @@
 variables:
 
-#
   # metadata for tagging
   circle_build_url: '{{ env "CIRCLE_BUILD_URL"}}'
   circle_job_name: '{{ env "CIRCLE_JOB" }}'
@@ -19,7 +18,7 @@ builders:
         virtualization-type: "hvm"
         root-device-type: "ebs"
         name: "Windows_Server-2019-English-Full-ContainersLatest-*"
-      owners: ["153984058986"]
+      owners: ["amazon"]
       most_recent: true
     instance_type: "m5.2xlarge"
     ami_name: "windows-server-2019-vs2019-{{timestamp}}"
